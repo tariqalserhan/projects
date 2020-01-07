@@ -1,5 +1,6 @@
 #ifndef PROG0_FUNCS
 #define PROG0_FUNCS
+
 #include <stdlib.h>
 char parseArgs(int, char *[]);
 void collectInput(char **, int *);

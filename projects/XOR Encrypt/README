@@ -1,0 +1,2 @@
+This program performs an XOR-based encryption/decryption on the specified input file using the
+specified key file to produce the specified output file.
