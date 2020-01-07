@@ -1,0 +1,5 @@
+This program securely downloads an encrypted calculation file, 
+decrypts the calculation file using a unique key, 
+performs the arithmetic operation in the calculation file, 
+generates a results file containing the arithmetic operation and its result, 
+encrypts the results file, and securely uploads the encrypted results file.
