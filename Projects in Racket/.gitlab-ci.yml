@@ -1,0 +1,16 @@
+image: "cmontella/racket:latest"
+
+test:raco:
+  script:
+  - raco test -s test src/question-1.rkt
+  - raco test -s test src/question-2.rkt
+  - raco test -s test src/question-3.rkt
+  - raco test -s test src/question-4.rkt
+  - raco test -s test src/question-5.rkt
+  - raco test -s test src/question-6.rkt
+  - raco test -s test src/question-7.rkt
+  - raco test -s test src/question-8.rkt
+  - raco test -s test src/question-9.rkt
+  - raco test -s test src/question-10.rkt
+  - raco test -s test src/question-11.rkt
+  - raco test -s test src/question-12.rkt

@@ -1,0 +1,25 @@
+program = function_definition | statement | expression ;
+function_definition = "fn " , identifier, "(" , arguments, ")" ;
+identifier = {alpha | numeric} ;
+number 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ;
+boolean = true | false
+string = "\"" , {numeric} | {alpha} , "\"" ;
+function_call = {alpha} , "(" , argument, ")" ; 
+expression = boolean | math_expression | number | string | function_call | identifier | ;
+statement = variable_define | function_return , ";"  ;
+function_return = "return " , expression ;
+variable_define = "let " , identifier , " = ", expression ;
+arguments = expression , other_arg ;
+parenthetical_expression = "(" , l1 , ")" ;
+l4 = function_call | number | identifier | parenthetical_expression ;
+l3_infix = [{space}] , "^" , [{space}] , l4 ;
+l3 = l4 , [{l3_infix}] , {math_expression | nothing} ;
+l2_infix = [{space}] , ( "*" | "/" ) , [{space}] , l3 ;
+l2 = l3 , [{l2_infix}] , {(math_expression | nothing)} ;
+l1_infix = [{space}] , ( "+" | "-" ) , [{space}] , l2 ;
+l1 = l2 , [{l1_infix}] , {(math_expression | nothing)} ;
+math_expression = l1;
+space = " " ;
+newline = '\n' ;
+other_arg = ",", expression;
+comment = "//", [{alpha | numeric}| space}];
