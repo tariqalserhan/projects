@@ -1,0 +1,4 @@
+This program prompts the user for their first and last name and their favorite integer and
+calculates the sum-of-products or product-of-sums based on the integer entered and
+the ASCII value of each character in the first and last name entered. Note that 
+non-alphabetical characters, except for hyphen and apostrophe, are ignored.
